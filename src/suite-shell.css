@@ -1,0 +1,93 @@
+.sidebar .nav-list {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #40536b transparent;
+}
+.sidebar .nav-item {
+  flex-shrink: 0;
+}
+.sidebar .sidebar-tip {
+  display: none;
+}
+.sidebar .sidebar-footer {
+  flex-shrink: 0;
+  margin-top: 16px;
+}
+.suite-card {
+  background: var(--surface, #fff);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  min-width: 0;
+}
+.suite-card h2 {
+  font-size: 18px;
+}
+.suite-section-heading,
+.suite-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.suite-section-heading {
+  margin-bottom: 18px;
+  color: var(--accent, #087f7e);
+}
+.suite-section-heading h2 {
+  margin: 0;
+  color: var(--text);
+}
+.suite-muted {
+  color: var(--text-soft, #62738b);
+  line-height: 1.7;
+}
+.suite-field {
+  display: grid;
+  gap: 8px;
+  margin: 20px 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+.suite-field :is(input, textarea, select) {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--input-bg, #fff);
+  color: var(--text);
+  padding: 12px;
+  font: inherit;
+}
+.suite-notice {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  background: var(--surface-soft, #f4f7fb);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.suite-error {
+  color: var(--danger, #be3851);
+  font-size: 13px;
+}
+.copilot-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 22px;
+}
+.copilot-answer {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  line-height: 1.8;
+}
+@media (max-width: 1000px) {
+  .copilot-layout {
+    grid-template-columns: 1fr;
+  }
+  .suite-card {
+    padding: 18px;
+  }
+}

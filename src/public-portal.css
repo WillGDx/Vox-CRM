@@ -1,0 +1,144 @@
+.public-portal {
+  min-height: 100dvh;
+  padding: 36px 18px;
+  background: #f1f5fa;
+  color: #24334b;
+}
+.public-brand {
+  display: block;
+  max-width: 620px;
+  margin: 0 auto 24px;
+  font-weight: 750;
+  font-size: 28px;
+  color: #087f7e;
+}
+.public-brand span {
+  font-weight: 400;
+  font-size: 18px;
+  color: #62738b;
+}
+.public-card {
+  margin: auto;
+  max-width: 620px;
+  border: 1px solid #e0e7f0;
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 10px 40px #20304808;
+}
+.public-card h1 {
+  margin: 14px 0;
+  font-size: 26px;
+}
+.public-card p {
+  line-height: 1.7;
+  font-size: 14px;
+  color: #62738b;
+}
+.public-icon {
+  color: #087f7e;
+  width: 30px;
+  height: 30px;
+}
+.public-card label {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+.public-card :is(input, textarea) {
+  padding: 12px;
+  border: 1px solid #d8e2ec;
+  border-radius: 8px;
+  background: #f9fbfd;
+  width: 100%;
+  color: #24334b;
+  font: inherit;
+}
+.public-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  padding: 13px;
+  border-radius: 9px;
+  background: #087f7e;
+  color: white;
+  font-weight: 600;
+}
+.public-primary:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.public-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 15px 0;
+}
+.public-slots button {
+  border: 1px solid #d5e5e6;
+  border-radius: 7px;
+  background: #f0f8f7;
+  padding: 9px 13px;
+  color: #087f7e;
+}
+.public-slots .selected {
+  background: #087f7e;
+  color: white;
+}
+.public-success {
+  padding: 20px 0;
+  color: #087f7e;
+}
+.public-credit {
+  text-align: center;
+  font-size: 11px;
+  color: #73839a;
+  margin-top: 24px;
+}
+.public-card .public-error {
+  color: #b53048;
+  background: #fff0f3;
+  padding: 12px;
+  border-radius: 8px;
+}
+.public-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 420px;
+  overflow-y: auto;
+  padding: 15px 0;
+}
+.public-message {
+  background: #f1f5fa;
+  border-radius: 10px;
+  padding: 12px;
+  max-width: 90%;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.public-message.inbound {
+  background: #e6f5f2;
+  align-self: flex-end;
+}
+.public-message p {
+  margin: 7px 0;
+  white-space: pre-wrap;
+  color: #24334b;
+}
+.public-message time {
+  color: #73839a;
+  font-size: 10px;
+}
+@media (max-width: 500px) {
+  .public-card {
+    padding: 22px 18px;
+  }
+  .public-portal {
+    padding-top: 24px;
+  }
+}
